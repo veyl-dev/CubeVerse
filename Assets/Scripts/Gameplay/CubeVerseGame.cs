@@ -11,7 +11,6 @@ namespace CubeVerse.Gameplay
 {
     public enum GameMode { Classic, Speedcubing, Practice }
 
-    [DefaultExecutionOrder(-100)]
     public sealed class CubeVerseGame : MonoBehaviour
     {
         private CubeModel model;
@@ -65,10 +64,11 @@ namespace CubeVerse.Gameplay
 
         private void Update()
         {
-            ReadPointer();
             ui?.SetClock(isInspecting ? Mathf.Max(0f, 15f - (float)(inspectionOffsetSeconds + inspection.Elapsed.TotalSeconds)) : elapsedOffsetSeconds + timer.Elapsed.TotalSeconds,
                 mode == GameMode.Speedcubing && isInspecting);
         }
+
+        private void LateUpdate() { ReadPointer(); }
 
         private void CreateWorld()
         {
