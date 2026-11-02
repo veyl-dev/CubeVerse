@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!129 &1
+PlayerSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 26
+  productName: CubeVerse
+  companyName: Veyl Studio
+  defaultScreenOrientation: 1
+  activeInputHandler: 0
+  applicationIdentifier:
+    Android: com.veylstudio.cubeverse
+  AndroidMinSdkVersion: 24
+  AndroidTargetSdkVersion: 0
+  bundleVersion: 0.1.0
+  AndroidBundleVersionCode: 1
+  AndroidPreferredInstallLocation: 1
+  AndroidMinifyRelease: 0
+  AndroidMinifyDebug: 0
+  scriptingBackend:
+    Android: 1
+  il2cppCompilerConfiguration:
+    Android: 0
+  apiCompatibilityLevelPerPlatform:
+    Android: 6
